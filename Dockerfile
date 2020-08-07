@@ -2,8 +2,8 @@ FROM node:12-alpine
 
 WORKDIR /app
 
-COPY . ./app
+COPY . ./
 
-RUN npm run install && npm run build
+RUN npm install && npm run build
 
 CMD ["npm", "run", "start"]
