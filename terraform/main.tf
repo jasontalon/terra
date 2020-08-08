@@ -19,7 +19,7 @@ resource "aws_subnet" "terravue" {
 resource "aws_s3_bucket" "terravue" {
 }
 
-resource "aws_ecr_repository" "terravue" {
+resource "aws_ecr_repository" "terra-vue" {
   name                 = "terra-vue"
   image_tag_mutability = "IMMUTABLE"
 }
